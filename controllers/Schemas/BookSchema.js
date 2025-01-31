@@ -9,6 +9,8 @@ const BookSchema = new mongoose.Schema({
   img: String,
   discount: Number,
   type: String,
+},{
+  versionKey : false
 });
 
 module.exports = { BookSchema };
