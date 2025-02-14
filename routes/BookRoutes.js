@@ -7,7 +7,7 @@ const { GetBook } = require("../controllers/Book/GetBook")
 
 const BooksRoutes = express.Router()
 //Sufijo para mi endpoint
-BooksRoutes.get("/book",GetBook )
+BooksRoutes.get("/book/:type",GetBook )
 BooksRoutes.post("/book",PostBook )
 BooksRoutes.put("/book",UpdateBook )
 BooksRoutes.delete("/book",DeleteBook )
